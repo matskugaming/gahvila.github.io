@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Suomalainen Minecraft palvelin">
+    <meta name="keywords" content="Minecraft">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Gahvila</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        @font-face {
+            font-family:'Minecraftia';
+            font-display:swap;
+            src:url(monocraft.woff2), url(monocraft.woff)
+        }
+
+        h1 {
+            font-family:Minecraftia,serif
+        }
+
+        x {
+            font-family:Minecraftia,serif;
+        }
+
+        a {
+            font-family:Minecraftia,serif;
+        }
+
+        p {
+            font-family:Minecraftia,serif;
+        }
+
+        body {
+            background-image:url(background.avif);
+            background-color:#111112;
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position:center center;
+            margin:0;
+            padding:0;
+            height:100vh
+        }
+
+        .container {
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            height:100vh
+        }
+
+        .site-name {
+            font-size:75px;
+            text-shadow:5px 5px 5px #000,5px 5px 5px #000;
+            color:#96613d;
+            font-weight:900;
+            margin-bottom:5px;
+            padding-top:20px;
+            user-select:none
+        }
+
+        .box {
+            background-image:url(spruce_sign.webp);
+            box-shadow:0 0 10px #00000080;
+            padding:20px;
+            border-radius:5px;
+            text-align:center;
+            margin-bottom:10px
+        }
+
+        .box p {
+            text-shadow:1px 1px 10px #000,1px 1px 10px #000;
+            font-size:26px;
+            color:#fff;
+            margin:0
+        }
+
+        .button {
+            background-image:url(birch_sign.webp);
+            box-shadow:0 0 10px #00000080;
+            padding:10px;
+            border-radius:5px;
+            transition:all .2s ease-in-out;
+            text-align:center;
+            margin-left:10px;
+            margin-right:10px;
+            user-select:none;
+            margin-top:20px
+        }
+
+        .button x {
+            text-shadow:1px 1px 10px #000,1px 1px 10px #000;
+            font-size:25px;
+            color:#fff;
+            user-select:none
+        }
+
+        .button:hover {
+            color:#ffff;
+            box-shadow:0 15px 15px #915cb666;
+            user-select:none
+        }
+
+        .button:active {
+            background-color:#3e8e41;
+            box-shadow:0 5px #666;
+            transform:translateY(4px);
+            user-select:none
+        }
+
+        .parent {
+            display:flex;
+            justify-content:center;
+            user-select:none
+        }
+
+        .button2 {
+            background-image:url(birch_sign.webp);
+            flex:1;
+            justify-content:center;
+            box-shadow:0 0 10px #00000080;
+            padding:10px;
+            border-radius:5px;
+            transition:all .2s ease-in-out;
+            margin-top:20px;
+            margin-left:10px;
+            margin-right:10px;
+            box-sizing:border-box;
+            user-select:none
+        }
+
+        .button2 a {
+            display:flex;
+            color:#FA0;
+            flex-direction:column;
+            align-items:center;
+            text-align:center;
+            text-decoration:none;
+            text-shadow:1px 1px 10px #000,1px 1px 10px #000;
+            user-select:none
+        }
+
+        .button2 img {
+            width:50px;
+            height:50px;
+            margin-bottom:10px;
+            user-select:none
+        }
+
+        .button2:hover {
+            color:#ffff;
+            box-shadow:0 5px 15px #915cb666;
+            user-select:none
+        }
+
+        .button2:active {
+            background-color:#3e8e41;
+            box-shadow:0 5px #666;
+            transform:translateY(4px);
+            user-select:none
+        }
+
+        @media screen and (max-width: 768px) {
+            .parent {
+                flex-direction:column;
+                align-items:center
+            }
+
+            .button2 {
+                width:calc(100% - 20px)
+            }
+            .box {
+                width: 100vw;
+                padding: 20px 0;
+                border-radius:5px;
+                text-align:center;
+                margin-bottom:0;
+            }
+        }
+
+        .smalltext p {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1 class="site-name">Gahvila</h1>
+    <div class="box">
+        <p>Välillä Suomen suurin palvelin</p>
+        <div class="parent">
+            <div class="button2">
+                <a href="https://dc.gahvila.net" style="font-size: 25px;">Discord</a>
+            </div>
+            <div class="button2">
+                <a href="docs" style="font-size: 25px;">Dokumentaatio</a>
+            </div>
+            <div class="button2">
+                <a href="https://rikkeet.gahvila.net" style="font-size: 25px;">Rikkeet</a>
+            </div>
+        </div>
+        <div class="button" onclick="copyText()">
+            <p><x style="color:#FFAA00;" onclick="copyText()">mc.gahvila.net</x></p>
+            <p><x style="font-size: 15px;" onclick="copyText()">Kopioi osoite klikkaamalla</x></p>
+        </div>
+        <br>
+        <div class="smalltext">
+            <p>© gahvila.net 2024 | Emme ole sidoksissa Mojangiin tai Microsoftiin</p>
+        </div>
+    </div>
+</div>
+<script>
+    function copyText() {
+        navigator.clipboard.writeText("mc.gahvila.net");
+        alert('Osoite kopioitu leikepöydälle.');
+    }
+</script>
+</body>
+</html>
+
+
+
