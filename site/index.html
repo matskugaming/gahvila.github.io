@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Suomalainen Minecraft palvelin">
+    <meta name="keywords" content="Minecraft">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Gahvila</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+<div class="container">
+    <h1 class="site-name">Gahvila</h1>
+    <div class="box">
+        <p>Välillä Suomen suurin palvelin</p>
+        <div class="parent">
+            <div class="button2">
+                <a href="https://dc.gahvila.net" style="font-size: 25px;">Discord</a>
+            </div>
+            <div class="button2">
+                <a href="docs/index.html" style="font-size: 25px;">Dokumentaatio</a>
+            </div>
+            <div class="button2">
+                <a href="https://rikkeet.gahvila.net" style="font-size: 25px;">Rikkeet</a>
+            </div>
+        </div>
+        <div class="button" onclick="copyText()">
+            <p><x style="color:#FFAA00;">mc.gahvila.net</x></p>
+            <p><x style="font-size: 15px;">Kopioi osoite klikkaamalla</x></p>
+        </div>
+        <br>
+        <div class="smalltext">
+            <p>© gahvila.net 2024 | Emme ole sidoksissa Mojangiin tai Microsoftiin</p>
+        </div>
+    </div>
+</div>
+<script>
+    function copyText() {
+        navigator.clipboard.writeText("mc.gahvila.net");
+        alert('Osoite kopioitu leikepöydälle.');
+    }
+    window.addEventListener('DOMContentLoaded', (event) => {
+        if (window.location.href.includes("?kauppa")) {
+            alert('Gahvilan kauppa ei ole enää käytössä.')
+        }
+    });
+</script>
+</body>
+</html>
+
+
+
