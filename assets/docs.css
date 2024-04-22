@@ -38,7 +38,7 @@ body {
 
 h1 {
     text-align: center;
-    font-family: Minecraftia;
+    font-family: Minecraftia, sans-serif;
     text-shadow:5px 5px 5px #000, 5px 5px 5px #000;
 }
 
@@ -130,7 +130,8 @@ tr:nth-child(odd) {
 }
 
 .button2 {
-    font-family: Minecraftia;
+    cursor: pointer;
+    font-family: Minecraftia, sans-serif;
     background-image: url(birch_sign.webp);
     flex: 1;
     justify-content: center;
