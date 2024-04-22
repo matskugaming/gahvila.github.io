@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'Minecraftia';
     font-display: swap;
-    src:url(../assets/monocraft.woff2), url(../assets/monocraft.woff)
+    src:url(monocraft.woff2), url(monocraft.woff)
 }
 
 @font-face {
     font-family: 'Roboto';
     font-display: swap;
-    src: url(../assets/Roboto-Regular.ttf);
+    src: url(Roboto-Regular.ttf);
 }
 
 body {
-    background-image: url(../assets/background.avif);
+    background-image: url(background.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-    background-image: url(../assets/spruce_sign.webp);
+    background-image: url(spruce_sign.webp);
 
     max-width: 1000px;
     width: 100%;
@@ -131,7 +131,7 @@ tr:nth-child(odd) {
 
 .button2 {
     font-family: Minecraftia;
-    background-image: url(../assets/birch_sign.webp);
+    background-image: url(birch_sign.webp);
     flex: 1;
     justify-content: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
