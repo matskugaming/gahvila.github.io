@@ -43,8 +43,7 @@ body {
     font-size:75px;
     text-shadow:5px 5px 5px #000,5px 5px 5px #000;
     color:#96613d;
-    font-weight:900;
-    margin-bottom:5px;
+    margin-bottom:10px;
     padding-top:20px;
     user-select:none
 }
@@ -170,6 +169,14 @@ body {
     }
 }
 
+@media screen and (max-width: 370px) {
+    .site-name {
+        font-size: 20vw;
+    }
+}
+
 .smalltext p {
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 12px;
 }
