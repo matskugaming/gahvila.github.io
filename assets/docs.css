@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url(background-fade.avif);
+    background-image: url(docs-background-fade.avif);
     background-color:black;
     background-size: 100% auto; /* Set width to 100% and height to auto */
     background-repeat: no-repeat;

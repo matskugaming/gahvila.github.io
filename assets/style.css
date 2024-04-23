@@ -21,17 +21,29 @@ p {
 }
 
 body {
-    background-image:url(background.avif);
     background-color:#111112;
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center center;
     margin:0;
     padding:0;
-    height:100vh
+    height:100vh;
 }
 
+#background {
+    position: absolute; /* Position the background absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    transition: opacity 0.5s ease-in-out;
+}
 .container {
+    position:relative;
+    z-index: 1;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -50,7 +62,7 @@ body {
 
 .box {
     background-image:url(spruce_sign.webp);
-    box-shadow:0 0 10px #00000080;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.8);
     padding:20px;
     border-radius:5px;
     text-align:center;
