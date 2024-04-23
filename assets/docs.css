@@ -11,10 +11,11 @@
 }
 
 body {
-    background-image: url(background.avif);
-    background-size: cover;
+    background-image: url(background-fade.avif);
+    background-color:black;
+    background-size: 100% auto; /* Set width to 100% and height to auto */
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center; /* Start from the top and center horizontally */
     color: #fff;
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -26,9 +27,9 @@ body {
     position: relative;
 }
 
+
 .container {
     background-image: url(spruce_sign.webp);
-
     max-width: 1000px;
     width: 100%;
     margin-top: 10px;
