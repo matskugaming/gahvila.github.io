@@ -1,23 +1,23 @@
 @font-face {
-    font-family:'Minecraftia';
+    font-family:'monocraft';
     font-display:swap;
     src:url(monocraft.woff2), url(monocraft.woff)
 }
 
 h1 {
-    font-family:Minecraftia, sans-serif;
+    font-family:monocraft, monospace;
 }
 
 x {
-    font-family:Minecraftia, sans-serif;
+    font-family:monocraft, monospace;
 }
 
 a {
-    font-family:Minecraftia, sans-serif;
+    font-family:monocraft, monospace;
 }
 
 p {
-    font-family:Minecraftia, sans-serif;
+    font-family:monocraft, monospace;
 }
 
 body {
@@ -31,7 +31,7 @@ body {
 }
 
 #background {
-    position: fixed; /* Position the background fixed to ensure it covers the entire viewport */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -40,7 +40,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     transition: opacity 0.5s ease-in-out;
-    z-index: -1; /* Ensure the background is behind other elements */
+    z-index: -1;
 }
 .container {
     position:relative;

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var images = ["background1.avif", "background2.avif", "background3.avif", "background4.avif", "background5.avif"]; // Add your image filenames here
+    var images = ["background1.avif", "background2.avif", "background3.avif", "background4.avif", "background5.avif"];
     images = shuffleArray(images);
     var imageObjects = [];
     var currentIndex = 0;
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 500);
 
         currentIndex = (currentIndex + 1) % images.length;
-        setTimeout(changeBackground, 15000); // Change image every 5 seconds
+        setTimeout(changeBackground, 15000);
     }
 
     preloadImages();
