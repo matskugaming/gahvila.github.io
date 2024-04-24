@@ -7,7 +7,7 @@
 @font-face {
     font-family: 'Roboto';
     font-display: swap;
-    src: url(Roboto-Regular.ttf);
+    src:url(Roboto-Regular.woff2), url(Roboto-Regular.woff);
 }
 
 body {
