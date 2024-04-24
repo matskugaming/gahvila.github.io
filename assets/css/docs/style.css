@@ -1,25 +1,20 @@
 @font-face {
     font-family: 'monocraft';
     font-display: swap;
-    src:url(../../fonts/monocraft.woff2);
+    src:url(/assets/fonts/monocraft.woff2);
 }
 
-@font-face {
-    font-family: 'Roboto';
-    font-display: swap;
-    src:url(../../fonts/Roboto-Regular.woff2);
-}
 html {
     scroll-behavior: smooth;
 }
 body {
-    background-image: url(../../backgrounds/docs-background-fade.avif);
+    background-image: url(/assets/backgrounds/docs-background-fade.avif);
     background-color:black;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: top center;
     color: #fff;
-    font-family: "Roboto", sans-serif;
+    font-family: sans-serif, sans-serif;
     padding: 0;
     display: flex;
     margin: 0;
@@ -31,7 +26,7 @@ body {
 
 
 .container {
-    background-image: url(../../images/spruce_sign.webp);
+    background-image: url(/assets/images/spruce_sign.webp);
     max-width: 1000px;
     width: 100%;
     margin-top: 10px;
@@ -207,7 +202,7 @@ tr:nth-child(odd) {
 .button2 {
     cursor: pointer;
     font-family: monocraft, monospace;
-    background-image: url(../../images/birch_sign.webp);
+    background-image: url(/assets/images/birch_sign.webp);
     flex: 1;
     justify-content: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);

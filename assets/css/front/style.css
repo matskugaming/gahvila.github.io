@@ -1,7 +1,7 @@
 @font-face {
     font-family:'monocraft';
     font-display:swap;
-    src:url(../../fonts/monocraft.woff2);
+    src:url(/assets/fonts/monocraft.woff2);
 }
 
 h1 {
@@ -64,7 +64,7 @@ body {
 
 .box {
     background-color:#725430;
-    background-image:url(../../images/spruce_sign.webp);
+    background-image:url(/assets/images/spruce_sign.webp);
     box-shadow:0 0 20px 5px rgba(0,0,0,0.8);
     padding:20px;
     border-radius:5px;
@@ -94,7 +94,7 @@ body {
 .button {
     background-color:#c0af79;
     cursor:pointer;
-    background-image:url(../../images/birch_sign.webp);
+    background-image:url(/assets/images/birch_sign.webp);
     box-shadow:0 0 10px #00000080;
     padding:10px;
     border-radius:5px;
@@ -135,7 +135,7 @@ body {
 .button2 {
     cursor:pointer;
     background-color:#c0af79;
-    background-image:url(../../images/birch_sign.webp);
+    background-image:url(/assets/images/birch_sign.webp);
     flex:1;
     justify-content:center;
     box-shadow:0 0 10px #00000080;
@@ -211,35 +211,32 @@ body {
     font-size:12px
 }
 
-/* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
     font-family: monocraft, monospace;
-    visibility: hidden; /* Hidden by default. Visible on click */
-    min-width: 250px; /* Set a default minimum width */
-    background-color: #222; /* Black background color */
-    color: #fff; /* White text color */
-    text-align: center; /* Centered text */
-    border-radius: 10px; /* Rounded borders */
-    /* Padding */
+    background-image: url(/assets/images/spruce_sign.webp);
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #725430;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
     padding: 0 16px;
-    position: fixed; /* Sit on top of the screen */
-    z-index: 1; /* Add a z-index if needed */
-    left: 50%; /* Center the snackbar */
-    bottom: 50px; /* 30px from the bottom */
-    transform: translateX(-50%); /* Center horizontally */
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    box-shadow:0 0 20px 5px #000;
+    text-shadow:1px 1px 10px #000,1px 1px 10px #000;
 }
 
 
-/* Show the snackbar when clicking on a button (class added with JavaScript) */
 #snackbar.show {
-    visibility: visible; /* Show the snackbar */
-    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-    However, delay the fade out process for 2.5 seconds */
+    visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-/* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
     from {bottom: 0; opacity: 0;}
     to {bottom: 50px; opacity: 1;}
