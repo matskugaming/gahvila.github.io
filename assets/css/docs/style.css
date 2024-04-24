@@ -145,11 +145,11 @@ h2.section3 {
 .section-box-links ul {
     list-style-type: none;
     padding: 0;
-    margin: 5px;
 }
 
 .section-box-links li {
     display: inline-block;
+    margin: 5px;
 }
 
 .section-box-links a {
