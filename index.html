@@ -43,11 +43,17 @@
             <p>© gahvila.net 2024 | Emme ole sidoksissa Mojangiin tai Microsoftiin</p>
         </div>
     </div>
+    <div id="snackbar">
+        <p>Osoite kopioitu leikepöydälle</p>
+        <p>mc.gahvila.net</p>
+    </div>
 </div>
 <script>
     function copyText() {
         navigator.clipboard.writeText("mc.gahvila.net");
-        alert('Osoite kopioitu leikepöydälle.');
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2800);
     }
     window.addEventListener('DOMContentLoaded', (event) => {
         if (window.location.href.includes("?kauppa")) {
