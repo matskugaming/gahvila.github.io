@@ -14,11 +14,23 @@ document.addEventListener("DOMContentLoaded", function() {
         return array;
     }
 
-    function preloadImages() {
-        for (var i = 0; i < images.length; i++) {
+    function preloadImage(url) {
+        return new Promise((resolve, reject) => {
             var img = new Image();
-            img.src = "assets/backgrounds/" + images[i];
-            imageObjects.push(img);
+            img.onload = () => resolve(img);
+            img.onerror = reject;
+            img.src = url;
+        });
+    }
+
+    async function preloadImages() {
+        for (var i = 0; i < images.length; i++) {
+            try {
+                const img = await preloadImage("assets/backgrounds/" + images[i]);
+                imageObjects.push(img);
+            } catch (error) {
+                console.error("Failed to load image:", error);
+            }
         }
     }
 
@@ -35,6 +47,9 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(changeBackground, 15000);
     }
 
-    preloadImages();
-    changeBackground();
+    preloadImages().then(() => {
+        changeBackground();
+    }).catch(error => {
+        console.error("Failed to preload images:", error);
+    });
 });

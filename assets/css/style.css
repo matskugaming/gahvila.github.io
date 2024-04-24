@@ -1,23 +1,23 @@
 @font-face {
     font-family:'monocraft';
     font-display:swap;
-    src:url(monocraft.woff2), url(monocraft.woff)
+    src:url(../fonts/monocraft.woff2),url(../fonts/monocraft.woff)
 }
 
 h1 {
-    font-family:monocraft, monospace;
+    font-family:monocraft,monospace
 }
 
 x {
-    font-family:monocraft, monospace;
+    font-family:monocraft,monospace
 }
 
 a {
-    font-family:monocraft, monospace;
+    font-family:monocraft,monospace
 }
 
 p {
-    font-family:monocraft, monospace;
+    font-family:monocraft,monospace
 }
 
 body {
@@ -27,24 +27,25 @@ body {
     background-position:center center;
     margin:0;
     padding:0;
-    height:100vh;
+    height:100vh
 }
 
 #background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    transition: opacity 0.5s ease-in-out;
-    z-index: -1;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    transition:opacity .5s ease-in-out;
+    z-index:-1
 }
+
 .container {
     position:relative;
-    z-index: 1;
+    z-index:1;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -62,15 +63,27 @@ body {
 }
 
 .box {
-    background-color: #725430;
-    background-image:url(spruce_sign.webp);
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.8);
+    background-color:#725430;
+    background-image:url(../images/spruce_sign.webp);
+    box-shadow:0 0 20px 5px rgba(0,0,0,0.8);
     padding:20px;
     border-radius:5px;
     text-align:center;
     margin-bottom:10px
 }
-
+.box img {
+    width: 200px;
+    margin-bottom: -1px;
+    margin-top: 5px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 80%, transparent 100%);
+    -webkit-filter: drop-shadow(2px 2px 2px #000);
+    filter: drop-shadow(2px 2px 2px #000);
+}
+@media screen and (max-width: 400px) {
+    .box img {
+        width: 50vw;
+    }
+}
 .box p {
     text-shadow:1px 1px 10px #000,1px 1px 10px #000;
     font-size:26px;
@@ -79,9 +92,9 @@ body {
 }
 
 .button {
-    background-color: #c0af79;
-    cursor: pointer;
-    background-image:url(birch_sign.webp);
+    background-color:#c0af79;
+    cursor:pointer;
+    background-image:url(../images/birch_sign.webp);
     box-shadow:0 0 10px #00000080;
     padding:10px;
     border-radius:5px;
@@ -120,9 +133,9 @@ body {
 }
 
 .button2 {
-    cursor: pointer;
-    background-color: #c0af79;
-    background-image:url(birch_sign.webp);
+    cursor:pointer;
+    background-color:#c0af79;
+    background-image:url(../images/birch_sign.webp);
     flex:1;
     justify-content:center;
     box-shadow:0 0 10px #00000080;
@@ -176,23 +189,24 @@ body {
     .button2 {
         width:calc(100% - 20px)
     }
+
     .box {
-        width: 100vw;
-        padding: 20px 0;
+        width:100vw;
+        padding:20px 0;
         border-radius:5px;
         text-align:center;
-        margin-bottom:0;
+        margin-bottom:0
     }
 }
 
 @media screen and (max-width: 370px) {
     .site-name {
-        font-size: 20vw;
+        font-size:20vw
     }
 }
 
 .smalltext p {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 12px;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:12px
 }
