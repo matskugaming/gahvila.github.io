@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
     async function preloadImages() {
         for (var i = 0; i < images.length; i++) {
             try {
-                const img = await preloadImage("assets/backgrounds/" + images[i]);
+                const img = await preloadImage("/assets/backgrounds/" + images[i]);
                 imageObjects.push(img);
             } catch (error) {
                 console.error("Failed to load image:", error);
