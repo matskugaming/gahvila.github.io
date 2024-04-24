@@ -1,3 +1,6 @@
+---
+    layout: js_minifier
+---
 document.addEventListener("DOMContentLoaded", function() {
     var images = ["background1.avif", "background2.avif", "background3.avif", "background4.avif", "background5.avif"];
     images = shuffleArray(images);

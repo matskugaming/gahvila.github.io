@@ -1,7 +1,7 @@
 @font-face {
     font-family:'monocraft';
     font-display:swap;
-    src:url(../fonts/monocraft.woff2),url(../fonts/monocraft.woff)
+    src:url(../../fonts/monocraft.woff2);
 }
 
 h1 {
@@ -64,7 +64,7 @@ body {
 
 .box {
     background-color:#725430;
-    background-image:url(../images/spruce_sign.webp);
+    background-image:url(../../images/spruce_sign.webp);
     box-shadow:0 0 20px 5px rgba(0,0,0,0.8);
     padding:20px;
     border-radius:5px;
@@ -94,7 +94,7 @@ body {
 .button {
     background-color:#c0af79;
     cursor:pointer;
-    background-image:url(../images/birch_sign.webp);
+    background-image:url(../../images/birch_sign.webp);
     box-shadow:0 0 10px #00000080;
     padding:10px;
     border-radius:5px;
@@ -135,7 +135,7 @@ body {
 .button2 {
     cursor:pointer;
     background-color:#c0af79;
-    background-image:url(../images/birch_sign.webp);
+    background-image:url(../../images/birch_sign.webp);
     flex:1;
     justify-content:center;
     box-shadow:0 0 10px #00000080;
