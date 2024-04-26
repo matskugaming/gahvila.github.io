@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Gahvila on vuonna 2018 avattu suomalainen Minecraft palvelin. Gahvilassa voi pelata Survivalia ja Luovaa.">
-    <meta name="keywords" content="Minecraft">
+    <meta name="keywords" content="Minecraft, SMP, Survival, Creative, Luova, WorldEdit">
     <meta name="theme-color" content="#bd7e4a">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="max-age=2592000, must-revalidate">
 
     <meta property="og:title" content="Gahvila - Suomalainen Minecraft palvelin">
     <meta property="og:site_name" content="Gahvila">
     <meta property="og:description" content="Gahvila on vuonna 2018 avattu suomalainen Minecraft palvelin.">
     <meta property="og:image" content="https://gahvila.net/assets/images/logo.png">
     <meta property="og:url" content="https://gahvila.net">
+    <meta property="og:locale" content="fi_FI">
 
     <title>Gahvila - Suomalainen Minecraft palvelin</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/assets/css/front/style.css">
-
-    <link rel="preload" href="/assets/fonts/monocraft.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body>
@@ -26,7 +24,7 @@
 <div class="container">
     <h1 class="site-name">Gahvila</h1>
     <div class="box">
-        <p>Välillä Suomen suurin palvelin</p>
+        <p title="iskulause">Välillä Suomen suurin palvelin</p>
         <div class="parent">
             <div class="button2" onclick="window.location.href='https://dc.gahvila.net'; " title="dc.gahvila.net">
                 <a href="https://dc.gahvila.net" style="font-size: 25px;">Discord</a>
@@ -43,7 +41,7 @@
             <p><x style="font-size: 15px;">Kopioi osoite klikkaamalla</x></p>
         </div>
         <br>
-        <div class="smalltext">
+        <div title="footer" class="smalltext">
             <p>© gahvila.net 2024 | Emme ole sidoksissa Mojangiin tai Microsoftiin</p>
         </div>
     </div>
@@ -55,7 +53,7 @@
 <script>
     function copyText() {
         navigator.clipboard.writeText("mc.gahvila.net");
-        var x = document.getElementById("snackbar");
+        const x = document.getElementById("snackbar");
         x.className = "show";
         setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2800);
     }

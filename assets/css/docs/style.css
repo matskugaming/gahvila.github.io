@@ -14,7 +14,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     color: #fff;
-    font-family: sans-serif, sans-serif;
+    font-family: sans-serif;
     padding: 0;
     display: flex;
     margin: 0;
@@ -94,7 +94,7 @@ h2.section3 {
 
 .section-box-no-title {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     background-color: #333;
     opacity: 95%;
@@ -107,20 +107,15 @@ h2.section3 {
     opacity: 100%;
     text-shadow: 2px 2px black;
     font-family: monocraft, monospace;
-    font-size: 25px;
+    font-size: 22px;
     margin: 0;
 }
 
 .section-box-no-title img {
-    width: 370px;
+    width: 30vw;
     margin: 10px;
     -webkit-filter: drop-shadow(5px 5px 5px #000);
     filter: drop-shadow(5px 5px 5px #000);
-}
-@media screen and (max-width: 768px) {
-    .section-box-no-title img {
-        width: 60%;
-    }
 }
 
 .section-box-links {
