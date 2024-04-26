@@ -4,6 +4,7 @@
     src:url(/assets/fonts/monocraft.woff2);
 }
 
+
 h1 {
     font-family:monocraft,monospace
 }
@@ -29,6 +30,8 @@ body {
     padding:0;
     height:100vh
 }
+
+
 
 #background {
     position:fixed;
@@ -91,48 +94,13 @@ body {
     margin:0
 }
 
-.button {
-    background-color:#c0af79;
-    cursor:pointer;
-    background-image:url(/assets/images/birch_sign.webp);
-    box-shadow:0 0 10px #00000080;
-    padding:10px;
-    border-radius:5px;
-    transition:all .2s ease-in-out;
-    text-align:center;
-    margin-left:10px;
-    margin-right:10px;
-    user-select:none;
-    margin-top:20px
-}
-
-.button x {
-    text-shadow:1px 1px 10px #000,1px 1px 10px #000;
-    font-size:25px;
-    color:#fff;
-    user-select:none
-}
-
-.button:hover {
-    color:#ffff;
-    box-shadow:0 15px 15px #915cb666;
-    user-select:none
-}
-
-.button:active {
-    background-color:#3e8e41;
-    box-shadow:0 5px #666;
-    transform:translateY(4px);
-    user-select:none
-}
-
 .parent {
     display:flex;
     justify-content:center;
     user-select:none
 }
 
-.button2 {
+.button {
     cursor:pointer;
     background-color:#c0af79;
     background-image:url(/assets/images/birch_sign.webp);
@@ -149,7 +117,7 @@ body {
     user-select:none
 }
 
-.button2 a {
+.button a {
     display:flex;
     color:#FA0;
     flex-direction:column;
@@ -160,20 +128,20 @@ body {
     user-select:none
 }
 
-.button2 img {
+.button img {
     width:50px;
     height:50px;
     margin-bottom:10px;
     user-select:none
 }
 
-.button2:hover {
+.button:hover {
     color:#ffff;
     box-shadow:0 5px 15px #915cb666;
     user-select:none
 }
 
-.button2:active {
+.button:active {
     background-color:#3e8e41;
     box-shadow:0 5px #666;
     transform:translateY(4px);
@@ -186,7 +154,7 @@ body {
         align-items:center
     }
 
-    .button2 {
+    .button {
         width:calc(100% - 20px)
     }
 
@@ -224,7 +192,7 @@ body {
     position: fixed;
     z-index: 1;
     left: 50%;
-    bottom: 50px;
+    bottom: 1vh;
     transform: translateX(-50%);
     box-shadow:0 0 20px 5px #000;
     text-shadow:1px 1px 10px #000,1px 1px 10px #000;
@@ -239,20 +207,20 @@ body {
 
 @-webkit-keyframes fadein {
     from {bottom: 0; opacity: 0;}
-    to {bottom: 50px; opacity: 1;}
+    to {bottom: 1vh; opacity: 1;}
 }
 
 @keyframes fadein {
     from {bottom: 0; opacity: 0;}
-    to {bottom: 50px; opacity: 1;}
+    to {bottom: 1vh; opacity: 1;}
 }
 
 @-webkit-keyframes fadeout {
-    from {bottom: 50px; opacity: 1;}
+    from {bottom: 1vh; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
 
 @keyframes fadeout {
-    from {bottom: 50px; opacity: 1;}
+    from {bottom: 1vh; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }

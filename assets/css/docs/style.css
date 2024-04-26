@@ -194,7 +194,7 @@ tr:nth-child(odd) {
     border-top-right-radius: 0;
 }
 
-.button2 {
+.button {
     cursor: pointer;
     font-family: monocraft, monospace;
     background-image: url(/assets/images/birch_sign.webp);
@@ -211,7 +211,7 @@ tr:nth-child(odd) {
     user-select: none;
 }
 
-.button2 a {
+.button a {
     display: flex;
     color: #FFAA00;
     flex-direction: column;
@@ -222,30 +222,30 @@ tr:nth-child(odd) {
     user-select: none;
 }
 
-.button2 img {
+.button img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
     user-select: none;
 }
 
-.button2:hover {
+.button:hover {
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
     user-select: none;
 }
 
-.button2:active {
+.button:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
     user-select: none;
 }
-.link { color: #FFAA00; } /* CSS link color (red) */
-.link:hover { color: #ffc34d; } /* CSS link hover (green) */
+.link { color: #FFAA00; }
+.link:hover { color: #ffc34d; }
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     border-radius: 10px;
